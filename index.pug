@@ -1,0 +1,29 @@
+doctype doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles.css")
+        script(src="https://unpkg.com/@phosphor-icons/web@2.1.1")
+        title To-Do List App
+    body 
+        div.container 
+            h1.title To-Do List App
+            div.sub-container 
+                div.serach_container
+                    input(type="text", class="searchBar")
+                    i.ph.ph-magnifying-glass.iconCari
+                div.dropdown
+                    div.select
+                        span.selected All
+                        div.caret
+                    ul.menu
+                        li.active All 
+                        li Done
+                        li !Done
+                .theme_changer 
+                    i.ph.ph-sun 
+
+        script(src="js/main.js")
+        script(src="js/animasi.js") 
+        script(src="node_modules/animejs/lib/anime.min.js")  
