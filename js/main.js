@@ -34,11 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const themeChanger = document.querySelector("#switch");
   const bg = document.querySelector("#page");
+  const title = document.querySelector(".title");
 
   themeChanger.addEventListener("click", () => {
     // console.log("clicked");
     // console.log(bg);
     bg.classList.toggle("darkActive");
+    title.classList.toggle("dark__font");
     // document.body.classList.toggle("dark--body");
   });
 });
